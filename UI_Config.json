@@ -1,0 +1,21 @@
+{
+    "output_file": "config.json",
+
+    "singleGreeting": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Single Greeting per live",
+        "tooltip": "True if you want it to only run once per live",
+        "group" : "General"
+    },
+    "volume": {
+        "type": "slider",
+        "value": 50.0,
+        "min": 1,
+        "max": 100,
+        "ticks": 1.0,
+        "label": "Volume",
+        "tooltip": "Set the volume power for the playing sounds.",
+        "group": "General"
+    }
+}
