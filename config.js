@@ -2,7 +2,7 @@
   "liveOnly": true,
   "words": "hey, hi, hello",
   "permission": "Everyone",
-  "volume": 50,
+  "volume": 50.0,
   "useCooldown": true,
   "useCooldownMessages": false,
   "cooldown": 1,
@@ -10,5 +10,6 @@
   "userCooldown": 300,
   "onUserCooldown": "$user, $command is still on user cooldown for $cd minutes!",
   "responseHello": "Hello, $user!",
-  "singleGreeting": true
+  "singleGreeting": true,
+  "debug": true
 };

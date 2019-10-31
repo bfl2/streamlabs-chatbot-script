@@ -17,5 +17,13 @@
         "label": "Volume",
         "tooltip": "Set the volume power for the playing sounds.",
         "group": "General"
+    },
+    "debug": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Debug Mode",
+        "tooltip": "True if you want see additional logs for debugging",
+        "group" : "General"
     }
+
 }
