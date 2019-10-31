@@ -42,11 +42,13 @@ def Execute(data):
     username = data.UserName
     paramCount = data.GetParamCount()
 
-    if data.GetParam(0) != command:
-        return
-    if userId not in greetedUsers:
+    hasUserBeenGreeted =  userId in greetedUsers
+
+    if not hasUserBeenGreeted and userId!="":
         playRandomSound()
         greetedUsers.append(userId)
+    else:
+        return
 
     if verbose:
         log("userId = "+str(userId))
@@ -57,7 +59,9 @@ def Execute(data):
     return
 
 def Tick():
-    updateVolumeReading()
+    updateVolumeOnTick = True
+    if(updateVolumeOnTick):
+        updateVolumeReading()
     return
 
 ### Auxiliary functions

@@ -2,7 +2,7 @@
   "liveOnly": true,
   "words": "hey, hi, hello",
   "permission": "Everyone",
-  "volume": 7,
+  "volume": 50,
   "useCooldown": true,
   "useCooldownMessages": false,
   "cooldown": 1,
