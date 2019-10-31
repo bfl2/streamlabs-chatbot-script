@@ -12,6 +12,7 @@ Website = "https://github.com/bfl2/streamlabs-chatbot-script"
 Description = "Script do canal ursope para tocar sons especiais para viewers ao entrarem no canal"
 Creator="ursope"
 Version="1.0.0"
+command = "!WelcomeSound"
 
 configFile = "config.json"
 volume = 0.5
@@ -79,12 +80,12 @@ def Execute(data):
         log("Users in toGreet list count = " + str(len(toGreetList)))
         log("res:"+str(res))
 
+    updateSettings()
+
     return
 
 def Tick():
-    updateVolumeOnTick = True
-    if(updateVolumeOnTick):
-        updateVolumeReading()
+
     return
 
 ### Auxiliary functions
